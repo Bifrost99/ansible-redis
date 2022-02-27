@@ -1,0 +1,8 @@
+- name: Redis
+  hosts: all
+  become: yes
+  vars_files:
+    - vars/main.yml
+    - defaults/main.yml
+  roles:
+    - redis
